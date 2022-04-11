@@ -1,5 +1,9 @@
 import React, { Component, useState } from "react";
 import SidebarEvent from "./sidebar_event";
+import styled, {keyframes} from 'styled-components'
+import { tada, rollIn, swing, wobble, slideOutUp, slideInLeft, rotateInDownLeft, fadeInDownBig } from "react-animations";
+
+
 
 class EventSidebar extends Component {
   constructor(props) {
@@ -25,19 +29,27 @@ class EventSidebar extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log(this.state.events);
-  }
+
 
   render() {
+    let count =4
+    const Animation_1 = keyframes`${rollIn}`;
+    const Animation_2 = keyframes`${fadeInDownBig}`    
+    const chosenAnimation = Animation_2
+    let AnimatedDiv = styled.div`animation: ${count}s ${chosenAnimation};`;
     return (
-      <section>
+      <section className="p-3">
         <h4>Featured This Month</h4>
         <hr/>
         {this.state.events.map((event, index) => {
+            count-=.5;
+            AnimatedDiv = styled.div`animation: ${count}s ${chosenAnimation};`;
+            console.log(count)
             return(
-            
-          <SidebarEvent key={event.name} title={event.name} date={event.dates} img={event.img}/>
+            <AnimatedDiv>
+                <SidebarEvent key={event.name} title={event.name} date={event.dates} img={event.img}/>
+            </AnimatedDiv>
+          
             );
         })}
       </section>
