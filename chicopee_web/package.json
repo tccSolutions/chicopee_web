@@ -1,6 +1,6 @@
 {
-  "homepage": "tccsolutions.github.io/chicopee_web/",
   "name": "chicopee_web",
+  "homepage": "https://tccsolutions.github.io/chicopee_web/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
