@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
         <Routes>
-          <Route path='/' element={<Homepage/>}/>
-          <Route path='staff' element={<Staff/>}/>
-          <Route path='events' element={<Events/>}/>
+          <Route exact path='/' element={<Homepage/>}/>
+          <Route path='/staff' element={<Staff/>}/>
+          <Route path='/events' element={<Events/>}/>
           <Route path='contact' element={<ContactPage/>}/>
         </Routes>
       </BrowserRouter>
