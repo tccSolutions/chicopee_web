@@ -1,17 +1,16 @@
 import React from "react";
 import EventSidebar from "../../components/event_sidebar/event_sidebar";
-import styled, {keyframes} from 'styled-components'
-import {fadeIn, rollIn, rubberBand} from 'react-animations'
+import styled, { keyframes } from "styled-components";
+import { fadeIn, rollIn, rubberBand } from "react-animations";
 
 export default function Homepage() {
+  // Animationed Components
+  const fadeInAnimation = keyframes`${fadeIn}`;
+  const FadeDiv = styled.div`
+    animation: 3s ${fadeInAnimation};
+  `;
 
-    // Animationed Components
-    const fadeInAnimation = keyframes`${fadeIn}`;
-    const FadeDiv = styled.div`animation: 3s ${fadeInAnimation};`;
-
-   
-
-    // Render Page
+  // Render Page
   return (
     <section>
       <div className="container-fluid row justify-content-between m-0">
@@ -36,9 +35,8 @@ export default function Homepage() {
         </FadeDiv>
         {/* Side Bar */}
         <div className="col-md-3">
-        <EventSidebar />
-        </div>        
-        
+          <EventSidebar />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -7,8 +8,10 @@ class Navbar extends Component {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow shadow-5">
           <div class="container-fluid align-items-end">
               <div class='d-flex flex-column'>
-              <img src='https://www.hallcounty.org/ImageRepository/Document?documentID=6262' alt='...'
+                <a href='https://www.hallcounty.org' target='_blank'>
+                <img src='https://www.hallcounty.org/ImageRepository/Document?documentID=6262' alt='...'
               width='250px'/>
+                </a>              
               <a class="navbar-brand" href="#">                
               Chicopee Woods Ag Center
             </a>
@@ -28,24 +31,24 @@ class Navbar extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">
+                  <Link to='/' class="nav-link " >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">
+                  <Link to='/staff' class="nav-link ">
                     Staff
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">
+                  <Link to='/events' class="nav-link ">
                    Up-Coming Events
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">
+                  <Link to='/contact' class="nav-link ">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
