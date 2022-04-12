@@ -11,7 +11,7 @@ const StaffCard = ({img, title,name, description, vacant})=>{
   `;
 
     return(
-    <FadeDiv className='container position-relative col-lg-4 border border-2 border-dark pt-3 mb-3 rounded shadow bg-light' style={{'maxHeight':'25em', 'width':'30%'}}>
+    <FadeDiv className='container position-relative col-lg-4 border border-2 border-dark pt-3 mb-3 rounded shadow bg-light' style={{'maxHeight':'25em', 'width':'20em'}}>
         <img src={img} alt='...' style={{'maxHeight': '25%'}}/>
         <h2>{title}</h2>
         <h4>{name}</h4>

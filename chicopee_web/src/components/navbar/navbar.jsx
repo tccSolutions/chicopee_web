@@ -7,7 +7,7 @@ class Navbar extends Component {
       <section>
         <nav
           class="navbar navbar-expand-lg navbar-light shadow-lg border-bottom border-dark"
-          style={{ backgroundImage: "linear-gradient(90deg, rgba(255,240,255,1) 0%, rgba(0,252,255,1) 74%, rgba(0,245,223,1) 100% )" }}
+          style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(146,249,241,1) 97%)" }}
         >
           <div class="container-fluid align-items-end">
             <div class="d-flex flex-column">
