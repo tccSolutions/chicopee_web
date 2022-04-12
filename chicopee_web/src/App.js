@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar/navbar";
 import Homepage from "./pages/homepage/homepage";
 import Staff from "./pages/staff/staff";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
