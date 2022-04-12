@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tccsolutions.github.io/chicopee_web/static/css/main.0b4e74b4.css",
-    "main.js": "/tccsolutions.github.io/chicopee_web/static/js/main.36e33c32.js",
+    "main.js": "/tccsolutions.github.io/chicopee_web/static/js/main.30840f37.js",
     "static/js/787.3acf9e69.chunk.js": "/tccsolutions.github.io/chicopee_web/static/js/787.3acf9e69.chunk.js",
     "index.html": "/tccsolutions.github.io/chicopee_web/index.html",
     "main.0b4e74b4.css.map": "/tccsolutions.github.io/chicopee_web/static/css/main.0b4e74b4.css.map",
-    "main.36e33c32.js.map": "/tccsolutions.github.io/chicopee_web/static/js/main.36e33c32.js.map",
+    "main.30840f37.js.map": "/tccsolutions.github.io/chicopee_web/static/js/main.30840f37.js.map",
     "787.3acf9e69.chunk.js.map": "/tccsolutions.github.io/chicopee_web/static/js/787.3acf9e69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b4e74b4.css",
-    "static/js/main.36e33c32.js"
+    "static/js/main.30840f37.js"
   ]
 }
