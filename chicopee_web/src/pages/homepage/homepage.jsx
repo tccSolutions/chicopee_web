@@ -20,7 +20,7 @@ export default function Homepage() {
               src="https://www.hallcounty.org/ImageRepository/Path?filePath=%2fdocuments%5cIntranet%5c20%2fagcenter1_201410271149598036.jpg"
               alt="..."
               className="mt-5"
-              style={{'width':'15em'}}
+              style={{'width':'35em'}}
             />
           </div>
           <div className="row justify-content-center">
