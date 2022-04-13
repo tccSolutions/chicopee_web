@@ -7,10 +7,10 @@ const EventCard = ({ timer, title, start_date, end_date, url, image_url }) => {
   const Animation_2 = keyframes`${fadeInDownBig}`;
   const chosenAnimation = Animation_2;
   let AnimatedDiv = styled.div`
-    animation: ${timer}s ${chosenAnimation};
+    animation: ${timer *.5}s ${chosenAnimation};
   `;
   return (
-    <AnimatedDiv class="mb-5">
+    <AnimatedDiv class="mb-5 col-4 shadow">
       <a
         class="btn bg-dark mb-3 p-3 pt-0 text-light w-75 rounded shadow"
         style={{ height: "14.5em" }}

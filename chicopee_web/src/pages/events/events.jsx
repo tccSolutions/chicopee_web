@@ -25,7 +25,7 @@ const Events = () => {
        <div>
          <h1>Scheduled Events</h1>
       </div>
-      <div>
+      <div className='container row justify-content-between'>
       {events.map(event=>(
          <EventCard 
          key={event.id} 
