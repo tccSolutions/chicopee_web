@@ -4,7 +4,7 @@ import EventCard from "../../components/event_card/event_card";
 const Events = () => {
     const [events, setEvents] = useState([])
     const fetchEvents = () => {
-        fetch("https://chicopee-backend.herokuapp.com/api/all_events"
+        fetch("https:chicopee-backend.herokuapp.com/api/all_events"
           )
         .then((response) => {
             return response.json();
@@ -21,11 +21,11 @@ const Events = () => {
 
 
   return (
-     <div class='mt-5'>
+     <div className='mt-5 '>
        <div>
          <h1>Scheduled Events</h1>
       </div>
-      <div className='container row justify-content-between'>
+      <div className=''>
       {events.map(event=>(
          <EventCard 
          key={event.id} 

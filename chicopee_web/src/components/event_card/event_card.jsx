@@ -5,25 +5,21 @@ import { rollIn, fadeInDownBig } from "react-animations";
 const EventCard = ({ timer, title, start_date, end_date, url, image_url }) => {
   const Animation_1 = keyframes`${rollIn}`;
   const Animation_2 = keyframes`${fadeInDownBig}`;
-  const chosenAnimation = Animation_2;
+  const chosenAnimation = Animation_1;
   let AnimatedDiv = styled.div`
     animation: ${timer *.5}s ${chosenAnimation};
   `;
   return (
-    <AnimatedDiv class="mb-5 col-4 shadow">
-      <a
-        class="btn bg-dark mb-3 p-3 pt-0 text-light w-75 rounded shadow"
-        style={{ height: "14.5em" }}
-        href={url} target="_blank"
-      >
-        <div class="btn">
-          <img src={image_url} alt="..." style={{ maxHeight: "30%" }} />          
-        </div>
-        <h4>{title}</h4>
-          <h6>
-            {start_date} - {end_date}
-          </h6>
-      </a>
+    <AnimatedDiv class="mb-5 shadow text-light" style={{'width':'', 'height':'15em'}}>
+     <a class='btn bg-dark text-light' href={url} target="_blank">
+     <div>
+      <img src={image_url} alt='...'/>
+     </div>
+       <div >
+         <h5>{title}</h5>
+         <h6>{start_date}-{end_date}</h6>
+       </div>
+     </a>
     </AnimatedDiv>
   );
 };
