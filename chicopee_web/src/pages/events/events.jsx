@@ -3,10 +3,8 @@ import React, {useState, useEffect} from "react";
 const Events = () => {
     const [events, setEvents] = useState([])
     const fetchEvents = () => {
-        fetch("https://chicopee-backend.herokuapp.com/api/all_events",{
-          method:'GET',
-          headers: {'Access-Control-Allow-Origin': '*'}
-        })
+        fetch("https://chicopee-backend.herokuapp.com/api/all_events"
+          )
         .then((response) => {
             return response.json();
         })
