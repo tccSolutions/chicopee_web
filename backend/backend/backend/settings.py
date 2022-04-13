@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3v4o#g1)v((o9^w=u=pgp$u_cohm7j=u=mih_*hs0qhe*bp&q_
 DEBUG = True
 
 ALLOWED_HOSTS=[
-    
+        'https://chicopee-backend.herokuapp.com'
     ]
 
 
