@@ -6,11 +6,11 @@ class Navbar extends Component {
     return (
       <section>
         <nav
-          class="navbar navbar-expand-lg navbar-light shadow-lg border-bottom border-dark"
-          style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(146,249,241,1) 97%)" }}
+          className="navbar navbar-expand-lg navbar-light shadow-lg border-bottom border-dark"
+          style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)" }}
         >
-          <div class="container-fluid align-items-end">
-            <div class="d-flex flex-column">
+          <div className="container-fluid align-items-end">
+            <div className="d-flex flex-column">
               <a href="https://www.hallcounty.org" target="_blank">
                 <img
                   src="https://www.hallcounty.org/ImageRepository/Document?documentID=6262"
@@ -18,13 +18,13 @@ class Navbar extends Component {
                   width="250px"
                 />
               </a>
-              <a class="navbar-brand" href="#">
+              <a className="navbar-brand" href="#">
                 Chicopee Woods Ag Center
               </a>
             </div>
 
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -32,27 +32,27 @@ class Navbar extends Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                  <Link to="/" class="nav-link ">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link ">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/staff" class="nav-link ">
+                <li className="nav-item">
+                  <Link to="/staff" className="nav-link ">
                     Staff
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/events" class="nav-link ">
+                <li className="nav-item">
+                  <Link to="/events" className="nav-link ">
                     Up-Coming Events
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link to="/contact" class="nav-link ">
+                <li className="nav-item">
+                  <Link to="/contact" className="nav-link ">
                     Contact
                   </Link>
                 </li>
