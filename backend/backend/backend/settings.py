@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-3v4o#g1)v((o9^w=u=pgp$u_cohm7j=u=mih_*hs0qhe*bp&q_
 DEBUG = True
 
 ALLOWED_HOSTS=[
-    
+        '*'
     ]
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api.apps.ApiConfig',
+    'corsheaders',
     
 ]
 
@@ -58,6 +59,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+    
   
 ]
 
@@ -129,7 +132,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR
 
 # Default primary key field type
