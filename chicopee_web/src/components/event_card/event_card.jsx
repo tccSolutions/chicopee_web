@@ -13,7 +13,7 @@ const EventCard = ({ timer, title, start_date, end_date, url, image_url }) => {
     <AnimatedDiv class="mb-5">
       <a
         class="btn bg-dark mb-3 p-3 pt-0 text-light w-75 rounded shadow"
-        style={{ height: "14em" }}
+        style={{ height: "14.5em" }}
         href={url} target="_blank"
       >
         <div class="btn">
