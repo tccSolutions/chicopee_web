@@ -34,7 +34,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -114,6 +113,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+REST_FRAMEWORK = {
+    'DATE_FORMATS': ["%B %d, %Y"],    
+    }
+
 
 
 # Internationalization
