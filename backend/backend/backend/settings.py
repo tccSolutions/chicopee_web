@@ -29,7 +29,8 @@ ALLOWED_HOSTS=[
         '*'
     ]
 
-CORS_ORIGIN_ALLOW_ALL = FalseCORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = [
     "https://tccsolutions.github.io/chicopee_web",
     "https://chicopee-backend.herokuapp.com",
     "http://localhost:8080",
