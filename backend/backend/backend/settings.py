@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-3v4o#g1)v((o9^w=u=pgp$u_cohm7j=u=mih_*hs0qhe*bp&q_
 DEBUG = True
 
 ALLOWED_HOSTS=[
-    'localhost:3000',
-    '127.0.0.1',
+    
     ]
 
 
@@ -57,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
   
 ]
 
