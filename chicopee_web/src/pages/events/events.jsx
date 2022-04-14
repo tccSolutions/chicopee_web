@@ -4,7 +4,7 @@ import EventCard from "../../components/event_card/event_card";
 const Events = () => {
   const [events, setEvents] = useState([]);
   const fetchEvents = () => {
-    fetch("http://127.0.0.1:8000/api/all_events")
+    fetch("https://chicopee-backend.herokuapp.com/api/all_events")
       .then((response) => {
         return response.json();
       })
