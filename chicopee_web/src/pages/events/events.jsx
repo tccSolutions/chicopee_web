@@ -10,7 +10,7 @@ const Events = () => {
       })
       .then((data) => {
         setEvents(data);
-        console.log(events);
+        
       });
   };
 
