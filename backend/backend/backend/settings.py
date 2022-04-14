@@ -33,6 +33,7 @@ ALLOWED_HOSTS=[
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
+'https://tccsoulutions.github.io',
 'http://localhost:3000',  # for localhost (REACT Default)
 'http://192.168.10.45:3000', # for network
 
