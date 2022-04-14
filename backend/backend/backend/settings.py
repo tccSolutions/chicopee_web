@@ -26,10 +26,17 @@ SECRET_KEY = 'django-insecure-3v4o#g1)v((o9^w=u=pgp$u_cohm7j=u=mih_*hs0qhe*bp&q_
 DEBUG = True
 
 ALLOWED_HOSTS=[
-        '*'
+        'https://chicopee-backend.herokuapp.com',
+        '127.0.0.1',
+        'localhost'
     ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+'http://localhost:3000',  # for localhost (REACT Default)
+'http://192.168.10.45:3000', # for network
+
+)
 
 
 
