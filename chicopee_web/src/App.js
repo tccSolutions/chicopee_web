@@ -11,18 +11,17 @@ import ContactPage from "./pages/contact/contact";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+    <div className="App">      
         <Navbar />
-
         <Routes>
           <Route exact path="/chicopee_web" element={<Homepage />} />
           <Route path="/chicopee_web/staff" element={<Staff />} />
           <Route path="/chicopee_web/events" element={<Events />} />
           <Route path="/chicopee_web/contact" element={<ContactPage />} />
-        </Routes>
-      </BrowserRouter>
+        </Routes>      
     </div>
+    </BrowserRouter>
   );
 }
 
