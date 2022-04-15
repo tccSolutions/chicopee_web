@@ -16,10 +16,10 @@ function App() {
       <Navbar />
      
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route path="chicopee_web/staff" element={<Staff />} />
-          <Route path="chicopee_web/events" element={<Events />} />
-          <Route path="chicopee_web/contact" element={<ContactPage />} />
+          <Route exact path="/chicopee_web" element={<Homepage />} />
+          <Route path="/chicopee_web/staff" element={<Staff />} />
+          <Route path="/chicopee_web/events" element={<Events />} />
+          <Route path="/chicopee_web/contact" element={<ContactPage />} />
         </Routes>
         </BrowserRouter>
       
