@@ -37,22 +37,22 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link ">
+                  <Link to="chicopee_web" className="nav-link ">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/staff" className="nav-link ">
+                  <Link to="chicopee_web/staff" className="nav-link ">
                     Staff
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/events" className="nav-link ">
+                  <Link to="chicopee_web/events" className="nav-link ">
                     Up-Coming Events
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact" className="nav-link ">
+                  <Link to="chicopee_web/contact" className="nav-link ">
                     Contact
                   </Link>
                 </li>
