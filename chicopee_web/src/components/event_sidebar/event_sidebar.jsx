@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState, useEffect } from "react";
 import SidebarEvent from "./sidebar_event";
 import styled, {keyframes} from 'styled-components'
 import { tada, rollIn, swing, wobble, slideOutUp, slideInLeft, rotateInDownLeft, fadeInDownBig } from "react-animations";
