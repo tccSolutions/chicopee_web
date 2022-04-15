@@ -13,16 +13,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar />
-     
+        <Navbar />
+
         <Routes>
           <Route exact path="/chicopee_web" element={<Homepage />} />
           <Route path="/chicopee_web/staff" element={<Staff />} />
           <Route path="/chicopee_web/events" element={<Events />} />
           <Route path="/chicopee_web/contact" element={<ContactPage />} />
         </Routes>
-        </BrowserRouter>
-      
+      </BrowserRouter>
     </div>
   );
 }
