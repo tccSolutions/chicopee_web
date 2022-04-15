@@ -1,3 +1,4 @@
+from datetime import datetime
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
@@ -10,3 +11,9 @@ def get_events(request):
     serializer = EventSerializer(events, many=True)
     return Response(serializer.data)
 
+@api_view(['GET'])
+def get_monthly_events(request):
+    month = datetime.now().month
+    events = Event.objects.filter(start_date__month=month).order_by('start_date')
+    serializer = EventSerializer(events, many=True)
+    return Response(serializer.data)
