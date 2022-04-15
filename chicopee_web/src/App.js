@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      
       <Navbar />
         <Routes>
           <Route exact path='/' element={<Homepage/>}/>
@@ -21,7 +21,7 @@ function App() {
           <Route path='/events' element={<Events/>}/>
           <Route path='contact' element={<ContactPage/>}/>
         </Routes>
-      </BrowserRouter>
+     
       
       
    

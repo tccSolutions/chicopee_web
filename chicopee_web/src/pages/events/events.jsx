@@ -28,7 +28,7 @@ const Events = () => {
         {events.map((event) => {
           count += 1;
           return (
-            <div className="col-md-8 rounded justify-content-center">
+            <div className="col-md-8 rounded justify-content-center ">
               <EventCard
                 key={event.id}
                 count={count}
