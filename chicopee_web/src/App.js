@@ -11,10 +11,10 @@ import ContactPage from "./pages/contact/contact";
 
 function App() {
   return (
-    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+    <BrowserRouter >
     <div className="App">      
         <Navbar />
-        <HashRouter>
+        <HashRouter basemname={`/`}>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/chicopee_web/staff" element={<Staff />} />
           <Route path="/chicopee_web/events" element={<Events />} />
