@@ -6,7 +6,7 @@ export default function SidebarEvent(props) {
   return (
    
       <a
-        href="www.google.com"
+        href={event.url}
         target="_blank"
         class="btn btn-dark w-100 mb-3 shadow"
         style={{ height: "9.5em" }}
@@ -18,7 +18,7 @@ export default function SidebarEvent(props) {
           style={{ maxHeight: "35%" }}
         />
         <h5>{props.title}</h5>
-        <h6>{props.date}</h6>
+        <h6>{props.start_date} - {props.end_date}</h6>
       </a>
    
   );
