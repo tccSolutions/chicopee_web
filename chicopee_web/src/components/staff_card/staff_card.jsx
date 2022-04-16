@@ -8,7 +8,7 @@ const StaffCard = ({img, title,name, description, vacant})=>{
     return(
     <div 
     className='container position-relative col-lg-4 border border-2 border-dark pt-3 mb-3 rounded shadow bg-light' 
-    style={{'height':'25pyem', 'width':'20em'}}>
+    style={{'height':'25em', 'width':'20em'}}>
         <img src={img} alt='...' style={{'maxHeight': '5em'}}/>
         <h4>{title}</h4>
         <h4>{name}</h4>
