@@ -14,8 +14,8 @@ export default function Homepage() {
   return (
     <section>
       <div className="container-fluid row justify-content-between m-0">
-        <FadeDiv className="col-md-8">
-          <div className="row justify-content-center">
+        <FadeDiv className="col-lg-8">
+          <div className="">
             <img
               src="https://www.hallcounty.org/ImageRepository/Path?filePath=%2fdocuments%5cIntranet%5c20%2fagcenter1_201410271149598036.jpg"
               alt="..."
@@ -23,7 +23,7 @@ export default function Homepage() {
               style={{'width':'35em'}}
             />
           </div>
-          <div className="row justify-content-center">
+          <div className="">
             <h6 className=" lh-lg">
               Chicopee Woods Agricultural Center is managed by Hall County Parks
               and Leisure Services. The center is comprised of 66 acres, and
@@ -35,7 +35,7 @@ export default function Homepage() {
           </div>
         </FadeDiv>
         {/* Side Bar */}
-        <div className="col-md-3">
+        <div className="col-lg-4">
           <EventSidebar />
         </div>
       </div>

@@ -23,7 +23,7 @@ const EventCard = ({ count,timer, title, start_date, end_date, url, image_url })
       <hr style={{'border':'none', 'borderTop':'dotted 15px black', 'backgroundColor':'white'}}/>
       <AnimatedDiv class="">
         <div className="">
-          <img src={image_url} alt="..." className="rounded" style={{'width':'75%', 'height':'10rem'}} />
+          <img src={image_url} alt="..." className="rounded" style={{ 'height':'10rem'}} />
         </div>
         <div>
           <h5>{title}</h5>

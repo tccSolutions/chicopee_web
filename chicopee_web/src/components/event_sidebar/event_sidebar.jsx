@@ -37,9 +37,9 @@ const EventSidebar = () => {
   }, []);
 
   return (
-    <section className="p-3">
-      <h4>Featured This Month</h4>
-      <hr />
+    <section className="">
+      <h4 style={{'borderBottom': '1px dotted black'}}>Featured This Month</h4>
+      
       {events.map((event, index) => {
         count -= 0.5;
         AnimatedDiv = styled.div`
