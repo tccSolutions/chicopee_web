@@ -6,7 +6,7 @@ export default function SidebarEvent(props) {
   return (
    
       <a
-        href={event.url}
+        href={props.url}
         target="_blank"
         class="btn btn-dark w-100 mb-3 shadow"
         style={{ height: "9.5em" }}
