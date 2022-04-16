@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <section>
-        <Navbar bg="light" expand="lg"
+        <Navbar bg="light" expand="lg" className='container-fluid'
         style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)", 'zIndex':'3000' }}>         
             <Navbar.Brand className='ms-1' href="https://www.hallcounty.org">
             <div className="d-flex flex-column">              
