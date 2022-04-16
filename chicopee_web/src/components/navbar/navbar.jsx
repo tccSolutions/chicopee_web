@@ -42,17 +42,17 @@ class Navbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/chicopee_web/staff" className="nav-link ">
+                  <Link to="/staff" className="nav-link ">
                     Staff
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/chicopee_web/events" className="nav-link ">
+                  <Link to="/events" className="nav-link ">
                     Up-Coming Events
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/chicopee_web/contact" className="nav-link ">
+                  <Link to="/contact" className="nav-link ">
                     Contact
                   </Link>
                 </li>

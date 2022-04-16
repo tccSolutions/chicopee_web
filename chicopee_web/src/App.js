@@ -11,17 +11,16 @@ import ContactPage from "./pages/contact/contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basemname={`/chicopee_web`}>
       <div className="App">
         <Navbar />
-        <HashRouter basemname={`/`}>
-          <Routes>
-            <Route exact path="/" element={<Homepage />} />
-            <Route path="/chicopee_web/staff" element={<Staff />} />
-            <Route path="/chicopee_web/events" element={<Events />} />
-            <Route path="/chicopee_web/contact" element={<ContactPage />} />
-          </Routes>
-        </HashRouter>
+
+        <Routes>
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
