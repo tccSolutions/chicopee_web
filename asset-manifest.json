@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chicopee_web/static/css/main.0b4e74b4.css",
-    "main.js": "/chicopee_web/static/js/main.af6a5d63.js",
+    "main.js": "/chicopee_web/static/js/main.bceeff3e.js",
     "static/js/787.3acf9e69.chunk.js": "/chicopee_web/static/js/787.3acf9e69.chunk.js",
     "index.html": "/chicopee_web/index.html",
     "main.0b4e74b4.css.map": "/chicopee_web/static/css/main.0b4e74b4.css.map",
-    "main.af6a5d63.js.map": "/chicopee_web/static/js/main.af6a5d63.js.map",
+    "main.bceeff3e.js.map": "/chicopee_web/static/js/main.bceeff3e.js.map",
     "787.3acf9e69.chunk.js.map": "/chicopee_web/static/js/787.3acf9e69.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b4e74b4.css",
-    "static/js/main.af6a5d63.js"
+    "static/js/main.bceeff3e.js"
   ]
 }
