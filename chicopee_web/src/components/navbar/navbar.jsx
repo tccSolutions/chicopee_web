@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Navbar } from 'react-bootstrap'
+import { Nav } from "react-bootstrap";
 
-class Navbar extends Component {
+
+class Header extends Component {
   render() {
     return (
       <section>
-        <nav
-          className="navbar navbar-expand-lg navbar-light shadow-lg border-bottom border-dark"
-          style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)" }}
-        >
-          <div className="container-fluid align-items-end">
+        <Navbar bg="light" expand="lg"
+        style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)" }}>         
+            <Navbar.Brand className='ms-1' href="#home">
             <div className="d-flex flex-column">
               <a href="https://www.hallcounty.org" target="_blank">
                 <img
@@ -22,47 +22,21 @@ class Navbar extends Component {
                 Chicopee Woods Ag Center
               </a>
             </div>
-
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li className="nav-item">
-                  <Link to="/chicopee_web" className="nav-link ">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="chicopee_web/staff" className="nav-link ">
-                    Staff
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="chicopee_web/events" className="nav-link ">
-                    Up-Coming Events
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="chicopee_web/contact" className="nav-link ">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+            
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/chicopee_web">Home</Nav.Link>
+                <Nav.Link href="/chicopee_web/staff">Staff</Nav.Link>
+                <Nav.Link href="/chicopee_web/events">Up Coming Events</Nav.Link>
+                <Nav.Link href="/chicopee_web/contact">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>          
+        </Navbar>       
       </section>
     );
   }
 }
 
-export default Navbar;
+export default Header;
