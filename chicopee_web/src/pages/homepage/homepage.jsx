@@ -1,7 +1,7 @@
 import React from "react";
 import EventSidebar from "../../components/event_sidebar/event_sidebar";
 import styled, { keyframes } from "styled-components";
-import { fadeIn, rollIn, rubberBand } from "react-animations";
+import { fadeIn} from "react-animations";
 
 export default function Homepage() {
   // Animationed Components
