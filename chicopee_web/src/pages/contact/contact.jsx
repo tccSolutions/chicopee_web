@@ -4,13 +4,13 @@ const ContactPage = () => {
 
     return(
     <div>
-        <div class="container">
+        <div class="container position-absolute start-50 top-50 translate-middle">
             <div class="row justify-content-center mt-3">
                 <img
                 src="https://www.hallcounty.org/ImageRepository/Path?filePath=%2fdocuments%5cIntranet%5c20%2fagcenter1_201410271149598036.jpg"
                 alt=""
                 class="rounded"
-                style={{'maxHeight':'15em', 'width':'auto'}}
+                style={{'maxHeight':'50%', 'maxWidth':'50%', 'minWidth':'300px'}}
               />
             </div>
             <div class="row text-center justify-content-center">

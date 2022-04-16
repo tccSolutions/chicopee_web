@@ -28,9 +28,8 @@ const Events = () => {
         {events.map((event) => {
           count += 1;
           return (
-            <div className="col-md-8 rounded justify-content-center ">
-              <EventCard
-                key={event.id}
+            <div key={event.id}className="col-md-8 rounded justify-content-center ">
+              <EventCard               
                 count={count}
                 timer={(count += 1)}
                 title={event.title}

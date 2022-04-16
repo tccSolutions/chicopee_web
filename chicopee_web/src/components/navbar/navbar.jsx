@@ -9,18 +9,17 @@ class Header extends Component {
       <section>
         <Navbar bg="light" expand="lg"
         style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)" }}>         
-            <Navbar.Brand className='ms-1' href="#home">
-            <div className="d-flex flex-column">
-              <a href="https://www.hallcounty.org" target="_blank">
+            <Navbar.Brand className='ms-1' href="https://www.hallcounty.org">
+            <div className="d-flex flex-column">              
                 <img
                   src="https://www.hallcounty.org/ImageRepository/Document?documentID=6262"
                   alt="..."
                   width="250px"
                 />
-              </a>
-              <a className="navbar-brand" href="#">
+              
+              <h4 className="navbar-brand" >
                 Chicopee Woods Ag Center
-              </a>
+              </h4>
             </div>
             
             </Navbar.Brand>

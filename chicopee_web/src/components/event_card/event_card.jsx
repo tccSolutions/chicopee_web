@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
-import { rollIn, fadeInDownBig } from "react-animations";
-import { fadeInLeft, fadeIn} from "react-animations";
+import { fadeInDownBig } from "react-animations";
+import { fadeIn} from "react-animations";
 
 const EventCard = ({ count,timer, title, start_date, end_date, url, image_url }) => {
   
   const Animation_1 = keyframes`${fadeIn}`;
   const Animation_2 = keyframes`${fadeInDownBig}`; 
-  const [animation, setAnimation]= useState()
+ 
   
   
     
@@ -17,13 +17,13 @@ const EventCard = ({ count,timer, title, start_date, end_date, url, image_url })
     `;
   return (
     <div
-      class=""
-      style={{height: "20em" }}
+      className=""
+      style={{height: "10%" }}
     >
       <hr style={{'border':'none', 'borderTop':'dotted 15px black', 'backgroundColor':'white'}}/>
-      <AnimatedDiv class="">
+      <AnimatedDiv className="">
         <div className="">
-          <img src={image_url} alt="..." className="rounded" style={{ 'height':'10rem'}} />
+          <img src={image_url} alt="..." className="rounded" style={{ 'maxHeight':'10rem', 'maxWidth':'100%'}} />
         </div>
         <div>
           <h5>{title}</h5>
@@ -31,7 +31,7 @@ const EventCard = ({ count,timer, title, start_date, end_date, url, image_url })
             {start_date}-{end_date}
           </h6>
         </div>
-        <a className='btn btn-secondary' href={url} target='_blank'>More Information</a>
+        <a className='btn btn-secondary' href={url} target='_blank' rel="noreferrer">More Information</a>
       </AnimatedDiv>
     </div>
   );
