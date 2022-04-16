@@ -37,7 +37,7 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li className="nav-item">
-                  <Link to="/chicopee_web" className="nav-link ">
+                  <Link to="/" className="nav-link ">
                     Home
                   </Link>
                 </li>

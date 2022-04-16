@@ -15,7 +15,7 @@ function App() {
     <div className="App">      
         <Navbar />
         <HashRouter>
-          <Route exact path="/chicopee_web" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route path="/chicopee_web/staff" element={<Staff />} />
           <Route path="/chicopee_web/events" element={<Events />} />
           <Route path="/chicopee_web/contact" element={<ContactPage />} />
