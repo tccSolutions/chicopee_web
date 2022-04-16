@@ -45,7 +45,7 @@ const EventSidebar = () => {
         AnimatedDiv = styled.div`
           animation: ${count}s ${chosenAnimation};
         `;
-        console.log(count);
+       
         return (
           <AnimatedDiv key={index}>
             <SidebarEvent

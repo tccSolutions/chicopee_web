@@ -11,15 +11,15 @@ import ContactPage from "./pages/contact/contact";
 
 function App() {
   return (
-    <BrowserRouter basemname={`/chicopee_web`}>
+    <BrowserRouter basemname={'/chicopee_web'}>
       <div className="App">
         <Navbar />
 
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route exact path="/chicopee_web" element={<Homepage />} />
+          <Route path="chicopee_web/staff" element={<Staff />} />
+          <Route path="chicopee_web/events" element={<Events />} />
+          <Route path="chicopee_web/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </BrowserRouter>
