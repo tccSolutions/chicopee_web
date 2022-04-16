@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap";
 import Navbar from "./components/navbar/navbar";
 import Homepage from "./pages/homepage/homepage";
 import Staff from "./pages/staff/staff";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Events from "./pages/events/events";
 import ContactPage from "./pages/contact/contact";
 
@@ -14,12 +14,12 @@ function App() {
     <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
     <div className="App">      
         <Navbar />
-        <Routes>
+        <HashRouter>
           <Route exact path="/chicopee_web" element={<Homepage />} />
           <Route path="/chicopee_web/staff" element={<Staff />} />
           <Route path="/chicopee_web/events" element={<Events />} />
           <Route path="/chicopee_web/contact" element={<ContactPage />} />
-        </Routes>      
+        </HashRouter>      
     </div>
     </BrowserRouter>
   );
