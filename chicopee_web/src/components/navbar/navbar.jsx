@@ -9,7 +9,7 @@ class Header extends Component {
       <section>
         <Navbar bg="light" expand="lg" className='container-fluid'
         style={{ 'backgroundImage': "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210, 246, 252,1) 97%)", 'zIndex':'3000' }}>         
-            <Navbar.Brand className='ms-1' href="https://www.hallcounty.org">
+            <Navbar.Brand className='ms-1' href="https://www.hallcounty.org" style={{'paddingBottom':'0'}}>
             <div className="d-flex flex-column">              
                 <img
                   src="https://www.hallcounty.org/ImageRepository/Document?documentID=6262"
