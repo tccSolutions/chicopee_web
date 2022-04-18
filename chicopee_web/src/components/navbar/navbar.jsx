@@ -24,7 +24,7 @@ class Header extends Component {
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" style={{'alignSelf': 'end'}}>
               <Nav className="me-auto">
                 <Nav.Link href="/chicopee_web">Home</Nav.Link>
                 <Nav.Link href="/chicopee_web/staff">Staff</Nav.Link>
